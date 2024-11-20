@@ -1,0 +1,6 @@
+C:\Users\vecchi.21208\source\repos\eCommerce\eCommerce\obj\Debug\net8.0-windows\eCommerce.Form1.resources
+C:\Users\vecchi.21208\source\repos\eCommerce\eCommerce\obj\Debug\net8.0-windows\eCommerce.csproj.GenerateResource.cache
+C:\Users\vecchi.21208\source\repos\eCommerce\eCommerce\obj\Debug\net8.0-windows\eCommerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vecchi.21208\source\repos\eCommerce\eCommerce\obj\Debug\net8.0-windows\eCommerce.AssemblyInfoInputs.cache
+C:\Users\vecchi.21208\source\repos\eCommerce\eCommerce\obj\Debug\net8.0-windows\eCommerce.AssemblyInfo.cs
+C:\Users\vecchi.21208\source\repos\eCommerce\eCommerce\obj\Debug\net8.0-windows\eCommerce.csproj.CoreCompileInputs.cache
