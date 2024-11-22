@@ -12,7 +12,7 @@ namespace eCommerce
             private string marca;
             private string modello;
             private double prezzo;
-            private string identificativo;
+            private int identificativo;
 
             public string Marca
             {
@@ -27,7 +27,7 @@ namespace eCommerce
                 get { return prezzo; }
                 set { prezzo = value; }
             }
-            public string Identificativo
+            public int Identificativo
             {
                 get { return identificativo; }
             }

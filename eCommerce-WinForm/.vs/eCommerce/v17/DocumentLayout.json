@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|c:\\users\\vecchi.21208\\ecommerce-winform\\ecommerce-winform\\ecommerce\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|solutionrelative:ecommerce\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|c:\\users\\vecchi.21208\\ecommerce-winform\\ecommerce-winform\\ecommerce\\carrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|solutionrelative:ecommerce\\carrello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|c:\\users\\vecchi.21208\\ecommerce-winform\\ecommerce-winform\\ecommerce\\prodotto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|solutionrelative:ecommerce\\prodotto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|c:\\users\\vecchi.21208\\ecommerce-winform\\ecommerce-winform\\ecommerce\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F944F15-C1CC-4C0A-BA63-2C2E39047157}|eCommerce\\eCommerce.csproj|solutionrelative:ecommerce\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Form1.cs",
+              "RelativeDocumentMoniker": "eCommerce\\Form1.cs",
+              "ToolTip": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Form1.cs",
+              "RelativeToolTip": "eCommerce\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:41:36.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Form1.cs",
+              "RelativeDocumentMoniker": "eCommerce\\Form1.cs",
+              "ToolTip": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Form1.cs [Progettazione]",
+              "RelativeToolTip": "eCommerce\\Form1.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:17:09.002Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Prodotto.cs",
+              "DocumentMoniker": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Prodotto.cs",
+              "RelativeDocumentMoniker": "eCommerce\\Prodotto.cs",
+              "ToolTip": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Prodotto.cs",
+              "RelativeToolTip": "eCommerce\\Prodotto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:17:00.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Carrello.cs",
+              "DocumentMoniker": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Carrello.cs",
+              "RelativeDocumentMoniker": "eCommerce\\Carrello.cs",
+              "ToolTip": "C:\\Users\\vecchi.21208\\eCommerce-WinForm\\eCommerce-WinForm\\eCommerce\\Carrello.cs",
+              "RelativeToolTip": "eCommerce\\Carrello.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:16:46.407Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
