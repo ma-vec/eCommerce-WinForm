@@ -30,12 +30,6 @@ namespace eCommerce
         {
             if (prodotto == null)
                 return;
-            prodottiCarrello.Remove(prodotto);
-        }
-        public void rimuoviProdottoVistaInClasse(Prodotto prodotto)
-        {
-            if (prodotto == null)
-                return;
             int pos = prodottiCarrello.IndexOf(prodotto);
             if (pos != -1)
                 prodottiCarrello.RemoveAt(pos);
