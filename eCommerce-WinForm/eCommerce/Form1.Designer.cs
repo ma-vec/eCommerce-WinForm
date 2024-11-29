@@ -56,6 +56,7 @@
             label9 = new Label();
             labelPrice = new Label();
             label10 = new Label();
+            Export = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)carrello).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -65,12 +66,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownRoad).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Export).BeginInit();
             SuspendLayout();
             // 
             // carrello
             // 
             carrello.Image = (Image)resources.GetObject("carrello.Image");
-            carrello.Location = new Point(919, 6);
+            carrello.Location = new Point(863, 12);
             carrello.Name = "carrello";
             carrello.Size = new Size(55, 55);
             carrello.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -335,11 +337,23 @@
             label10.TabIndex = 26;
             label10.Text = "€";
             // 
+            // Export
+            // 
+            Export.Image = (Image)resources.GetObject("Export.Image");
+            Export.Location = new Point(936, 12);
+            Export.Name = "Export";
+            Export.Size = new Size(58, 55);
+            Export.SizeMode = PictureBoxSizeMode.StretchImage;
+            Export.TabIndex = 27;
+            Export.TabStop = false;
+            Export.MouseClick += Export_MouseClick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1021, 589);
+            Controls.Add(Export);
             Controls.Add(label10);
             Controls.Add(labelPrice);
             Controls.Add(label9);
@@ -378,6 +392,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownRoad).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Export).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -411,5 +426,6 @@
         private Label label9;
         private Label labelPrice;
         private Label label10;
+        private PictureBox Export;
     }
 }

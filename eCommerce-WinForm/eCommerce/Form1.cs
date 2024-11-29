@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+
 namespace eCommerce
 {
     public partial class Form1 : Form
@@ -96,6 +101,16 @@ namespace eCommerce
                 totPrezzo += Tesla.Prezzo;
                 AggiornaInterfaccia();
             }
+        }
+
+        private void Export_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            string json = JsonSerializer.Serialize(C.ProdottiCarrello, new JsonSerializerOptions { WriteIndented = true });
+            // Scrittura del JSON nel file "carrello.json"
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "carrello.json");
+            File.WriteAllText(filePath, json);
+            MessageBox.Show("Esportazione completata\nNome file: carrello.json");
         }
     }
 }
