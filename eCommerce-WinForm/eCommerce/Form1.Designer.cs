@@ -57,6 +57,7 @@
             labelPrice = new Label();
             label10 = new Label();
             Export = new PictureBox();
+            Import = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)carrello).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -67,14 +68,15 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDownRoad).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Export).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Import).BeginInit();
             SuspendLayout();
             // 
             // carrello
             // 
             carrello.Image = (Image)resources.GetObject("carrello.Image");
-            carrello.Location = new Point(863, 12);
+            carrello.Location = new Point(907, 35);
             carrello.Name = "carrello";
-            carrello.Size = new Size(55, 55);
+            carrello.Size = new Size(41, 37);
             carrello.SizeMode = PictureBoxSizeMode.StretchImage;
             carrello.TabIndex = 0;
             carrello.TabStop = false;
@@ -85,7 +87,7 @@
             listBoxCarrello.ItemHeight = 15;
             listBoxCarrello.Location = new Point(884, 80);
             listBoxCarrello.Name = "listBoxCarrello";
-            listBoxCarrello.Size = new Size(90, 364);
+            listBoxCarrello.Size = new Size(90, 304);
             listBoxCarrello.TabIndex = 1;
             // 
             // pictureBox1
@@ -340,19 +342,31 @@
             // Export
             // 
             Export.Image = (Image)resources.GetObject("Export.Image");
-            Export.Location = new Point(936, 12);
+            Export.Location = new Point(884, 392);
             Export.Name = "Export";
-            Export.Size = new Size(58, 55);
+            Export.Size = new Size(41, 40);
             Export.SizeMode = PictureBoxSizeMode.StretchImage;
             Export.TabIndex = 27;
             Export.TabStop = false;
             Export.MouseClick += Export_MouseClick;
+            // 
+            // Import
+            // 
+            Import.Image = (Image)resources.GetObject("Import.Image");
+            Import.Location = new Point(933, 392);
+            Import.Name = "Import";
+            Import.Size = new Size(41, 40);
+            Import.SizeMode = PictureBoxSizeMode.StretchImage;
+            Import.TabIndex = 28;
+            Import.TabStop = false;
+            Import.Click += Import_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1021, 589);
+            Controls.Add(Import);
             Controls.Add(Export);
             Controls.Add(label10);
             Controls.Add(labelPrice);
@@ -393,6 +407,7 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDownRoad).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)Export).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Import).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -427,5 +442,6 @@
         private Label labelPrice;
         private Label label10;
         private PictureBox Export;
+        private PictureBox Import;
     }
 }

@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using System.Windows.Forms;
+using Newtonsoft.Json;
+
 
 namespace eCommerce
 {
@@ -105,12 +108,62 @@ namespace eCommerce
 
         private void Export_MouseClick(object sender, MouseEventArgs e)
         {
-
-            string json = JsonSerializer.Serialize(C.ProdottiCarrello, new JsonSerializerOptions { WriteIndented = true });
-            // Scrittura del JSON nel file "carrello.json"
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "carrello.json");
-            File.WriteAllText(filePath, json);
-            MessageBox.Show("Esportazione completata\nNome file: carrello.json");
+            if (listBoxCarrello.Items.Count > 0)
+            {
+                string json = System.Text.Json.JsonSerializer.Serialize(C.ProdottiCarrello, new JsonSerializerOptions { WriteIndented = true });
+                // Scrittura del JSON nel file "carrello.json"
+                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "carrello.json");
+                File.WriteAllText(filePath, json);
+                MessageBox.Show("Salvataggio disponibile per l'upload", "Esportazione completata");
+            } else
+            {
+                MessageBox.Show("Selezion almeno un prodotto per esportare", "Carrello vuoto");
+            }
         }
+
+        private void Import_Click(object sender, EventArgs e)
+        {
+            string filePath = "carrello.json"; // Percorso del file JSON
+
+            // Controlla se il file esiste
+            if (File.Exists(filePath))
+            {
+                C.svuotaCarrello();
+                totPrezzo = 0;
+                AggiornaInterfaccia();
+                try
+                {
+                    // Leggi il contenuto del file
+                    string jsonContent = File.ReadAllText(filePath);
+
+                    // Deserializza il JSON in una lista di oggetti
+                    List<Prodotto> prodottiCarrello = JsonConvert.DeserializeObject<List<Prodotto>>(jsonContent);
+
+                    // Aggiungi i prodotti deserializzati a ProdottiCarrello
+                    foreach (var prodotto in prodottiCarrello)
+                    {
+                        C.aggiungiProdotto(prodotto);
+                        prodotto.OttieniModelloId();
+                        totPrezzo += prodotto.Prezzo;  // Aggiorna il prezzo totale
+                        // Aggiorna l'interfaccia con i nuovi dati
+                        AggiornaInterfaccia();
+                    }
+                    MessageBox.Show("Importazione di " + listBoxCarrello.Items.Count + " prodotti completata", "Caricamento terminato");
+                    
+                }
+                //Gestisce le eccezioni dovute al JSON e le visualizza
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Errore nel caricare il file JSON: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nessun salvataggio trovato", "Importazione fallita");
+            }
+        }
+
+
     }
 }
+

@@ -22,3 +22,6 @@ C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\obj\Debug\ne
 C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\obj\Debug\net8.0-windows\eCommerce.pdb
 C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\obj\Debug\net8.0-windows\eCommerce.genruntimeconfig.cache
 C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\obj\Debug\net8.0-windows\ref\eCommerce.dll
+C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\obj\Debug\net8.0-windows\eCommerce.csproj.AssemblyReference.cache
+C:\Users\vecchi.21208\eCommerce-WinForm\eCommerce-WinForm\eCommerce\obj\Debug\net8.0-windows\eCommerce.csproj.Up2Date
