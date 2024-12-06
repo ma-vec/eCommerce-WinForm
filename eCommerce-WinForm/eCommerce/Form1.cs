@@ -12,6 +12,7 @@ namespace eCommerce
     {
         private int numCrescente = 0; //per generare automaticamente id
         private double totPrezzo = 0;
+        private string fileExtension = ".json";
         Carrello C = new Carrello("1");
 
 
@@ -108,11 +109,12 @@ namespace eCommerce
 
         private void Export_MouseClick(object sender, MouseEventArgs e)
         {
+            string fileName = textBoxFile.Text + fileExtension;
             if (listBoxCarrello.Items.Count > 0)
             {
                 string json = System.Text.Json.JsonSerializer.Serialize(C.ProdottiCarrello, new JsonSerializerOptions { WriteIndented = true });
                 // Scrittura del JSON nel file "carrello.json"
-                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "carrello.json");
+                string filePath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
                 File.WriteAllText(filePath, json);
                 MessageBox.Show("Salvataggio disponibile per l'upload", "Esportazione completata");
             } else
@@ -123,10 +125,10 @@ namespace eCommerce
 
         private void Import_Click(object sender, EventArgs e)
         {
-            string filePath = "carrello.json"; // Percorso del file JSON
+            string fileName = textBoxFile.Text + fileExtension;
 
             // Controlla se il file esiste
-            if (File.Exists(filePath))
+            if (File.Exists(fileName))
             {
                 C.svuotaCarrello();
                 totPrezzo = 0;
@@ -134,7 +136,7 @@ namespace eCommerce
                 try
                 {
                     // Leggi il contenuto del file
-                    string jsonContent = File.ReadAllText(filePath);
+                    string jsonContent = File.ReadAllText(fileName);
 
                     // Deserializza il JSON in una lista di oggetti
                     List<Prodotto> prodottiCarrello = JsonConvert.DeserializeObject<List<Prodotto>>(jsonContent);

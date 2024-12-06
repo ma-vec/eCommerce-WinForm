@@ -58,6 +58,7 @@
             label10 = new Label();
             Export = new PictureBox();
             Import = new PictureBox();
+            textBoxFile = new TextBox();
             ((System.ComponentModel.ISupportInitialize)carrello).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -87,7 +88,7 @@
             listBoxCarrello.ItemHeight = 15;
             listBoxCarrello.Location = new Point(884, 80);
             listBoxCarrello.Name = "listBoxCarrello";
-            listBoxCarrello.Size = new Size(90, 304);
+            listBoxCarrello.Size = new Size(90, 259);
             listBoxCarrello.TabIndex = 1;
             // 
             // pictureBox1
@@ -342,7 +343,7 @@
             // Export
             // 
             Export.Image = (Image)resources.GetObject("Export.Image");
-            Export.Location = new Point(884, 392);
+            Export.Location = new Point(884, 340);
             Export.Name = "Export";
             Export.Size = new Size(41, 40);
             Export.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -353,7 +354,7 @@
             // Import
             // 
             Import.Image = (Image)resources.GetObject("Import.Image");
-            Import.Location = new Point(933, 392);
+            Import.Location = new Point(933, 340);
             Import.Name = "Import";
             Import.Size = new Size(41, 40);
             Import.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -361,11 +362,19 @@
             Import.TabStop = false;
             Import.Click += Import_Click;
             // 
+            // textBoxFile
+            // 
+            textBoxFile.Location = new Point(865, 408);
+            textBoxFile.Name = "textBoxFile";
+            textBoxFile.Size = new Size(144, 23);
+            textBoxFile.TabIndex = 29;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1021, 589);
+            Controls.Add(textBoxFile);
             Controls.Add(Import);
             Controls.Add(Export);
             Controls.Add(label10);
@@ -443,5 +452,6 @@
         private Label label10;
         private PictureBox Export;
         private PictureBox Import;
+        private TextBox textBoxFile;
     }
 }
